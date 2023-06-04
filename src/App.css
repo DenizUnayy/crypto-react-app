@@ -1,0 +1,103 @@
+* {
+    font-weight: 500;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.switchStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#light .heading {
+    background-color: white;
+}
+
+#light * {
+    color: black;
+}
+
+#dark {
+    background-color: rgb(43, 40, 40);
+}
+
+.heading,
+.coin-row  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: 26272b;
+    box-shadow: 0px 0px 12px #18191b;
+    border-radius: 8px;
+    margin: 2rem 1rem;
+    padding: 1.2rem 1rem;
+    margin-top: 0.4rem;
+}
+
+.coin-row:hover {
+    transform: scale(1.04);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.coin-name {
+    margin-left: -4rem;
+}
+
+img {
+    height: 40px;
+    margin-right: 8px;
+    width: auto;
+}
+
+.img-symbol {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Scroll to Top Button Styling */
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+#light .scroll-to-top-button {
+    background-color: #333;
+    color: #fff;
+}
+
+#light .scroll-to-top-button:hover {
+    background-color: rgb(92, 79, 79);
+}
+
+.scroll-to-top-button:hover {
+    background-color: rgb(126, 93, 93);
+}
+
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+  
+  /* Media Query */
+  @media (max-width:768px) {
+    .hide-mobile {
+        display: none;
+    }
+}
